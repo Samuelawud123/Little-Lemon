@@ -1,3 +1,4 @@
+import './App.css';
 import  Logo from './images/Logo.svg';
 function Footer() {
     return (

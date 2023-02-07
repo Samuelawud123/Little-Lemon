@@ -1,4 +1,4 @@
-import  Logo from './images/Logo.svg';
+import './App.css';
 import  greeksalad from './images/greeksalad.jpg';
 import  lemondessert from './images/lemondessert.jpg';
 import  bruchetta from './images/bruchetta.svg';

@@ -1,12 +1,13 @@
+import './App.css';
 import  Logo from './images/Logo.svg';
 function Nav() {
-    return (
-     <div>
-        <div>
-        <img src={Logo} alt="Little Lemon Logo" />
+    return ( 
+     <div className="navbar">
+        <div  className="">
+        <img src={Logo} alt="Little Lemon Logo"  />
         </div>
-        <div>
-            <ul>
+        <div className="">
+            <ul >
                 <li> <a href="/"> Home </a> </li>
                 <li> <a href="/"> About </a> </li>
                 <li> <a href="/"> Menu </a> </li>

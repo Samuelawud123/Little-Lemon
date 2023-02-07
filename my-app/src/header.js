@@ -1,3 +1,4 @@
+import './App.css';
 import  restaurantfood from './images/restaurantfood.jpg';
 function Header() {
     return (
