@@ -5,37 +5,37 @@ import  bruchetta from './images/bruchetta.svg';
 
 function Main() {
     return (
-    <div>
-      <div>
-      <h1> This weekss specials!</h1>
+    <div >
+      <div className="main-header">
+      <h1> This weeks specials!</h1>
       <h2> Online Menu </h2>.
       </div>
-      <div>
-        <div>
-        <img src={greeksalad} alt="Little Lemon Logo" />
-            <div>
+      <div className="main-card">
+        <div className="card">
+        <img className="image-one" src={greeksalad} alt="Little Lemon Logo" />
+            <div className="item-name">
             <h3>Greek Salad</h3>
-            <h3>$12.99</h3>
+            <h4 >$12.99</h4>
             </div>
-        <h4>The famous greek salad of crispy lettuce, peppers, olives and our chicago style feta chees, garnished with crunchy garlic and rosemary croutons</h4>
+        <p>The famous greek salad of <br/>crispy lettuce, peppers, olives<br/> and our chicago style feta <br/>cheese, garnished with crunchy<br/> garlic and rosemary<br/> croutons</p>
         <h3> Order a delivery</h3>
         </div>
-        <div>
-        <img src={bruchetta} alt="Little Lemon Logo" />
-            <div>
+        <div  className="card">
+        <img className="image-one"  src={bruchetta} alt="Little Lemon Logo" />
+            <div className="item-name">
             <h3>Bruchetta</h3>
-            <h3>$5.99</h3>
+            <h4>$5.99</h4>
             </div>
-        <h4>Our bruchetta is made from grilled bread that has been smeared with garluic and seaconed with salt and olieve oil</h4>
+        <p>Our bruchetta is made from <br/>grilled bread that has been <br/>smeared with garluic and <br/>seaconed with salt and olive<br/> oil</p>
         <h3> Order a delivery</h3>
         </div>
-        <div>
-        <img src={lemondessert} alt="Little Lemon Logo" />
-            <div>
+        <div className="card">
+        <img className="image-one" src={lemondessert} alt="Little Lemon Logo" />
+            <div className="item-name">
             <h3>Lemon Desert</h3>
-            <h3>$7.99</h3>
+            <h4>$7.99</h4>
             </div>
-        <h4>This comes straight from grandmas reciepe book, every last ingriedient has been sourced and is as autherntic as can be imained</h4>
+        <p>This comes straight from <br/>grandmas reciepe book, every <br/>last ingriedient has been<br/> sourced and is as autherntic<br/> as can be imained</p>
         <h3> Order a delivery</h3>
         </div>
       </div>

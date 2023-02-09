@@ -3,7 +3,7 @@ import  Logo from './images/Logo.svg';
 function Nav() {
     return ( 
      <div className="navbar">
-        <div  className="">
+        <div  className="logo">
         <img src={Logo} alt="Little Lemon Logo"  />
         </div>
         <div className="">

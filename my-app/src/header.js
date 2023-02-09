@@ -2,12 +2,19 @@ import './App.css';
 import  restaurantfood from './images/restaurantfood.jpg';
 function Header() {
     return (
-    <div>
+    <div className="header">
+    <div className="header-content">
     <h1> Little Lemon </h1>
     <h2>Chicago</h2>
-    <h3>We are Family owned Mediterranean restaurant focused on traitional reciptes served with a modern twist</h3>
-        <div>
-        <img src={restaurantfood} alt="Little Lemon Logo" />
+    <p> We are Family owned <br/>Mediterranean restaurant, <br/>
+        focused on traitional<br/> recipes served with
+        a modern <br/>twist.
+        
+    </p>
+    <h4 className="reserve-button"> Reserve a Table</h4>
+    </div>
+        <div className="div-image">
+        <img src={restaurantfood} alt="Little Lemon Logo" className= "image" />
         </div>
     </div>
     );
