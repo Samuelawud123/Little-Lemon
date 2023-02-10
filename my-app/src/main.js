@@ -12,7 +12,7 @@ function Main() {
       </div>
       <div className="main-card">
         <div className="card">
-        <img className="image-one" src={greeksalad} alt="Little Lemon Logo" />
+        <div className="image-one-container"><img className="image-one" src={greeksalad} alt="Little Lemon Logo" /></div>
             <div className="item-name">
             <h3>Greek Salad</h3>
             <h4 >$12.99</h4>
@@ -21,7 +21,7 @@ function Main() {
         <h3> Order a delivery</h3>
         </div>
         <div  className="card">
-        <img className="image-one"  src={bruchetta} alt="Little Lemon Logo" />
+        <div className="image-one-container"><img className="image-one"  src={bruchetta} alt="Little Lemon Logo" /></div>
             <div className="item-name">
             <h3>Bruchetta</h3>
             <h4>$5.99</h4>
@@ -30,7 +30,7 @@ function Main() {
         <h3> Order a delivery</h3>
         </div>
         <div className="card">
-        <img className="image-one" src={lemondessert} alt="Little Lemon Logo" />
+        <div className="image-one-container"><img className="image-one" src={lemondessert} alt="Little Lemon Logo" /></div>
             <div className="item-name">
             <h3>Lemon Desert</h3>
             <h4>$7.99</h4>
