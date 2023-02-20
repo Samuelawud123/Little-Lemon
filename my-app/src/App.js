@@ -1,8 +1,8 @@
 import './App.css';
-import Header from './header';
-import Nav from './nav';
-import Main from './main';
-import Footer from './footer';
+import Header from './components/header/header';
+import Nav from './components/nav/nav';
+import Main from './components/main/main';
+import Footer from './components/footer/footer';
 
 
 

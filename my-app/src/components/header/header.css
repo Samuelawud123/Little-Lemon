@@ -1,0 +1,40 @@
+.header-content{
+    padding: 40px 30px;
+    margin-left: 80px; 
+  }
+  .header{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 350px;
+    background-color: #495e57; 
+  }
+  .header-content   h1 {
+    color: #F4ce14;
+    margin-bottom: 0%;
+  }
+  .header-content   p  {
+    color: #ffffff;
+    text-align: left;
+  }
+  .header-content >  h2 {
+      color: #ffffff;
+      margin-top: 0%;
+  }
+  .reserve-button{
+    background-color: #F4ce14;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: larger;
+  }
+  .image-container{
+    width: 250px;
+    height: 300px;
+    margin-top: 130px;
+    margin-left: 120px;
+   }
+   .image{
+     width: 100%;
+     height: 100%;
+     border-radius: 15px;  
+   }

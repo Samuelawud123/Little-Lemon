@@ -1,5 +1,5 @@
-import './App.css';
-import  Logo from './images/Logo.svg';
+import './nav.css';
+import  Logo from '../../images/Logo.svg';
 function Nav() {
     return ( 
      <div className="navbar">

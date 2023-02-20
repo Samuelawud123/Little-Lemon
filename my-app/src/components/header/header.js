@@ -1,5 +1,5 @@
-import './App.css';
-import  restaurantfood from './images/restaurantfood.jpg';
+import './header.css';
+import  restaurantfood from '../../images/restaurantfood.jpg';
 function Header() {
     return (
     <div className="header">
