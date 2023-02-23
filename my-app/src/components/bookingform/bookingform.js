@@ -45,8 +45,29 @@ function BookingForm({ onSubmit }) {
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("Birthday");
 
+  const validateForm = () => {
+    if (date === "") {
+      return false;
+    }
+    const currentDate = new Date().toISOString().slice(0, 10);
+    if (date < currentDate) {
+      return false;
+
+    }
+    if (guests < 1 || guests > 10) {
+      return false;
+    }
+
+    return true;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
+
     submitAPI();
     navigateToConfirmPage();
     onSubmit({ availableTimes });
@@ -57,19 +78,19 @@ function BookingForm({ onSubmit }) {
       <fieldset>
         <h1>Book a Table</h1>
         <label htmlFor="res-date">Choose date</label>
-        <input value={date} onChange={e => setDate(e.target.value)} type="date" id="res-date" />
+        <input value={date} onChange={e => setDate(e.target.value)} type="date" id="res-date" required />
         <label htmlFor="res-time">Choose time</label>
-        <select value={availableTimes} onChange={e => setAvailableTimes(e.target.value)} id="res-time">
+        <select value={availableTimes} onChange={e => setAvailableTimes(e.target.value)} id="res-time" required>
           {initTimes.map(time => <option key={time}>{time}</option>)}
         </select>
         <label htmlFor="guests">Number of guests</label>
-        <input type="number" value={guests} onChange={e => setGuests(e.target.value)} placeholder="1" min="1" max="10" id="guests" />
+        <input type="number" value={guests} onChange={e => setGuests(e.target.value)} placeholder="1" min="1" max="10" id="guests" required />
         <label htmlFor="occasion">Occasion</label>
-        <select value={occasion} onChange={e => setOccasion(e.target.value)} id="occasion">
+        <select value={occasion} onChange={e => setOccasion(e.target.value)} id="occasion" required>
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
-        <input type="submit" value="Make Your reservation" aria-label="Confirm your reservation" />
+        <input type="submit" value="Make Your reservation" aria-label="Confirm your reservation" disabled={!validateForm()} />
       </fieldset>
     </form>
   );
