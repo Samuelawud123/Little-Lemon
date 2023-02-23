@@ -3,6 +3,10 @@
     justify-content: space-evenly;
     margin-top: 100px;
     background-color:aliceblue;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
     
   }
   

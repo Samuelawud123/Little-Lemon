@@ -5,6 +5,7 @@ function About() {
         <div>
         
         <Header/>
+        
         </div>
     );
 }
